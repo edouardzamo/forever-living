@@ -1,40 +1,11 @@
 import { Link } from "react-router-dom";
+import HeroCarousel from "../components/HeroCarousel";
 
 export default function HomePage() {
   return (
     <div>
-      {/* Hero section */}
-      <div style={{
-        background: "linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%)",
-        padding: "80px 24px",
-        textAlign: "center"
-      }}>
-        <p style={{ fontSize: 13, fontWeight: 600, color: "#059669", letterSpacing: 2, marginBottom: 12 }}>
-          WELCOME TO
-        </p>
-        <h1 style={{ fontSize: 42, fontWeight: 800, color: "#064e3b", marginBottom: 16, lineHeight: 1.2 }}>
-          Forever Living Products
-        </h1>
-        <p style={{ fontSize: 17, color: "#047857", maxWidth: 540, margin: "0 auto 32px", lineHeight: 1.7 }}>
-          Natural health and wellness products made from the finest aloe vera.
-          Feel the difference nature makes.
-        </p>
-        <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-          <Link to="/products" style={{
-            background: "#059669", color: "#fff", padding: "12px 28px",
-            borderRadius: 10, fontWeight: 600, fontSize: 15, textDecoration: "none"
-          }}>
-            Shop Now
-          </Link>
-          <Link to="/about" style={{
-            background: "#fff", color: "#059669", padding: "12px 28px",
-            borderRadius: 10, fontWeight: 600, fontSize: 15, textDecoration: "none",
-            border: "1px solid #a7f3d0"
-          }}>
-            About Us
-          </Link>
-        </div>
-      </div>
+      {/* Carousel replaces the old hero */}
+      <HeroCarousel />
 
       {/* Features strip */}
       <div style={{
