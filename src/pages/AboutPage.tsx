@@ -68,7 +68,7 @@ export default function AboutPage() {
           Have questions about our products? We'd love to hear from you.
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: 8, alignItems: "center" }}>
-          <p style={{ fontSize: 14, color: "#047857" }}>📧 contact@foreverliving-store.com</p>
+          <p style={{ fontSize: 14, color: "#047857" }}>📧 Milainezamo@gmail.com</p>
           <p style={{ fontSize: 14, color: "#047857" }}>📱 +237 653566453</p>
           <p style={{ fontSize: 14, color: "#047857" }}>📍 Douala, Cameroon</p>
         </div>

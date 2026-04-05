@@ -3,11 +3,9 @@ import type { Product, BasketItem } from "./types";
 
 const BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
-const FRONTEND_URL = window.location.origin;
-
 function resolveImage(imagePath: string): string {
   if (imagePath.startsWith("http")) return imagePath;
-  return `${FRONTEND_URL}${imagePath}`;
+  return `${BASE}${imagePath}`;
 }
 
 export const fetchProducts = () =>
