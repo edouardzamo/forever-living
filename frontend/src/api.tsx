@@ -1,7 +1,7 @@
 import axios from "axios";
 import type { Product, BasketItem } from "./types";
 
-const BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const BASE = import.meta.env.VITE_API_URL || "https://forever-living.onrender.com";
 
 function resolveImage(imagePath: string): string {
   if (imagePath.startsWith("http")) return imagePath;
