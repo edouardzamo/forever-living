@@ -4,7 +4,11 @@ import { fetchBasket, removeFromBasket, clearBasket } from "../api";
 
 const SISTER_WHATSAPP = "237653566453"; // 👈 replace with her real number
 
-export default function BasketPage() {
+type Props = {
+  onBasketChange?: () => void;
+};
+
+export default function BasketPage({ onBasketChange }: Props) {
   const [items, setItems] = useState<BasketItem[]>([]);
   const [sent, setSent] = useState(false);
 
@@ -17,11 +21,13 @@ export default function BasketPage() {
   const handleRemove = async (id: number) => {
     await removeFromBasket(id);
     load();
+    onBasketChange?.();
   };
 
   const handleClear = async () => {
     await clearBasket();
     load();
+    onBasketChange?.();
   };
 
   const handleBuy = () => {
