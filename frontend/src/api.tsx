@@ -1,7 +1,7 @@
 import axios from "axios";
 import type { Product, BasketItem } from "./types";
 
-const BASE = "https://forever-living-1.onrender.com"; // Replace with your actual backend Render URL
+const BASE = "https://forever-living-2.onrender.com";
 
 function resolveImage(imagePath: string): string {
   if (imagePath.startsWith("http")) return imagePath;
