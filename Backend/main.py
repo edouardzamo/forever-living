@@ -22,7 +22,7 @@ products = [
     {
         "id": 1,
         "name": "Forever Aloe Vera Gel",
-        "price": 24.99,
+        "price": 19705,
         "description": "Pure stabilized aloe vera.",
         "image": "/images/gelly.jpg",
         "category": "Drinks"
@@ -30,7 +30,7 @@ products = [
     {
         "id": 2,
         "name": "Forever Aloe Berry Nectar",
-        "price": 26.99,
+        "price": 19705,
         "description": "Aloe with cranberry and apple.",
         "image": "/images/nectar.jpg",
         "category": "Drinks"
@@ -38,7 +38,7 @@ products = [
     {
         "id": 3,
         "name": "Forever Bee Honey",
-        "price": 14.99,
+        "price": 13800,
         "description": "Natural pure bee honey.",
         "image": "/images/bee.jpg",
         "category": "Nutrition"
@@ -46,7 +46,7 @@ products = [
     {
         "id": 4,
         "name": "Forever Arctic Sea",
-        "price": 34.99,
+        "price": 24450,
         "description": "Omega-3 fish oil supplement.",
         "image": "/images/arctic-sea.jpg",
         "category": "Supplements"
@@ -54,7 +54,7 @@ products = [
     {
         "id": 5,
         "name": "Forever Bright Toothgel",
-        "price": 9.99,
+        "price": 6100,
         "description": "Aloe-based toothgel.",
         "image": "/images/bright.jpg",
         "category": "Personal Care"
@@ -62,7 +62,7 @@ products = [
     {
         "id": 6,
         "name": "Forever Living Sonya Cream",
-        "price": 39.99,
+        "price": 20500,
         "description": "Moisturizing skin cream.",
         "image": "/images/soya.jpg",
         "category": "Skincare"
@@ -70,7 +70,7 @@ products = [
     {
         "id": 7,
         "name": "Absorbent C",
-        "price": 19.99,
+        "price": 13600,
         "description": "Absorbent product C.",
         "image": "/images/absorbent-c.jpg",
         "category": "Personal Care"
@@ -78,7 +78,7 @@ products = [
     {
         "id": 8,
         "name": "Absorbent D",
-        "price": 19.99,
+        "price": 13600,
         "description": "Absorbent product D.",
         "image": "/images/absorbent-d.jpg",
         "category": "Personal Care"
@@ -86,7 +86,7 @@ products = [
     {
         "id": 9,
         "name": "Active HA",
-        "price": 29.99,
+        "price": 26800,
         "description": "Active hyaluronic acid supplement.",
         "image": "/images/active-ha.png",
         "category": "Supplements"
@@ -94,7 +94,7 @@ products = [
     {
         "id": 10,
         "name": "Active Pro B",
-        "price": 34.99,
+        "price": 28950,
         "description": "Active probiotic supplement.",
         "image": "/images/active-pro-b.jpg",
         "category": "Supplements"
@@ -102,7 +102,7 @@ products = [
     {
         "id": 11,
         "name": "Aloe Vera Gel",
-        "price": 24.99,
+        "price": 19705,
         "description": "Pure stabilized aloe vera.",
         "image": "/images/aloe_vera_gel.jpg",
         "category": "Drinks"
@@ -110,7 +110,7 @@ products = [
     {
         "id": 12,
         "name": "Arctic Sea",
-        "price": 34.99,
+        "price": 24450,
         "description": "Omega-3 fish oil supplement.",
         "image": "/images/arctic-sea.jpg",
         "category": "Supplements"
@@ -118,7 +118,7 @@ products = [
     {
         "id": 13,
         "name": "Argi Plus",
-        "price": 39.99,
+        "price": 24450,
         "description": "L-arginine supplement.",
         "image": "/images/argi-plus.png",
         "category": "Supplements"
@@ -126,7 +126,7 @@ products = [
     {
         "id": 14,
         "name": "B12 Plus",
-        "price": 19.99,
+        "price": 12200,
         "description": "Vitamin B12 supplement.",
         "image": "/images/b12-plus.jpg",
         "category": "Supplements"
@@ -134,7 +134,7 @@ products = [
     {
         "id": 15,
         "name": "Calcium",
-        "price": 14.99,
+        "price": 19300,
         "description": "Calcium supplement.",
         "image": "/images/calcium.png",
         "category": "Supplements"
@@ -150,7 +150,7 @@ products = [
     {
         "id": 17,
         "name": "Daily",
-        "price": 29.99,
+        "price": 27100,
         "description": "Daily multivitamin.",
         "image": "/images/daily.jpg",
         "category": "Supplements"
@@ -158,7 +158,7 @@ products = [
     {
         "id": 18,
         "name": "Fiber",
-        "price": 19.99,
+        "price": 22300,
         "description": "Fiber supplement.",
         "image": "/images/fiber.jpg",
         "category": "Nutrition"
@@ -166,7 +166,7 @@ products = [
     {
         "id": 19,
         "name": "Fields of Greens",
-        "price": 39.99,
+        "price": 10050,
         "description": "Green superfood supplement.",
         "image": "/images/field-of-greens.png",
         "category": "Supplements"
@@ -174,7 +174,7 @@ products = [
     {
         "id": 20,
         "name": "Focus",
-        "price": 24.99,
+        "price": 14200,
         "description": "Focus and concentration supplement.",
         "image": "/images/focus.jpg",
         "category": "Supplements"
@@ -182,7 +182,7 @@ products = [
     {
         "id": 21,
         "name": "Garcinia Plus",
-        "price": 34.99,
+        "price": 21880,
         "description": "Garcinia cambogia supplement.",
         "image": "/images/garcina-plus.jpg",
         "category": "Supplements"
@@ -190,7 +190,7 @@ products = [
     {
         "id": 22,
         "name": "Garlic Thyme",
-        "price": 19.99,
+        "price": 14200,
         "description": "Garlic and thyme supplement.",
         "image": "/images/garlic-thme.jpg",
         "category": "Supplements"
@@ -198,7 +198,7 @@ products = [
     {
         "id": 23,
         "name": "ImmuBlend",
-        "price": 29.99,
+        "price": 18350,
         "description": "Immune system blend.",
         "image": "/images/imme-blend.jpg",
         "category": "Supplements"
@@ -206,7 +206,7 @@ products = [
     {
         "id": 24,
         "name": "Immune Gummy",
-        "price": 14.99,
+        "price": 8150,
         "description": "Immune support gummies.",
         "image": "/images/immune_gummy.jpg",
         "category": "Nutrition"
@@ -214,7 +214,7 @@ products = [
     {
         "id": 25,
         "name": "iVision",
-        "price": 39.99,
+        "price": 28500,
         "description": "Vision health supplement.",
         "image": "/images/ivision.jpg",
         "category": "Supplements"
@@ -222,7 +222,7 @@ products = [
     {
         "id": 26,
         "name": "Kids",
-        "price": 19.99,
+        "price": 11800,
         "description": "Children's supplement.",
         "image": "/images/kids.png",
         "category": "Nutrition"
@@ -230,7 +230,7 @@ products = [
     {
         "id": 27,
         "name": "Lean",
-        "price": 34.99,
+        "price": 32900,
         "description": "Weight management supplement.",
         "image": "/images/lean.jpg",
         "category": "Supplements"
@@ -238,7 +238,7 @@ products = [
     {
         "id": 28,
         "name": "Lycium Plus",
-        "price": 29.99,
+        "price": 23450,
         "description": "Goji berry supplement.",
         "image": "/images/lycium-plus.jpg",
         "category": "Supplements"
@@ -246,7 +246,7 @@ products = [
     {
         "id": 29,
         "name": "Marine Collagen",
-        "price": 49.99,
+        "price": 29300,
         "description": "Marine collagen supplement.",
         "image": "/images/marine-collagen.png",
         "category": "Supplements"
@@ -254,7 +254,7 @@ products = [
     {
         "id": 30,
         "name": "Move",
-        "price": 24.99,
+        "price": 49200,
         "description": "Joint health supplement.",
         "image": "/images/move.jpg",
         "category": "Supplements"
@@ -262,7 +262,7 @@ products = [
     {
         "id": 31,
         "name": "Multi Maca",
-        "price": 39.99,
+        "price": 21100,
         "description": "Maca root supplement.",
         "image": "/images/multi maca.jpg",
         "category": "Supplements"
@@ -270,7 +270,7 @@ products = [
     {
         "id": 32,
         "name": "Nature Min",
-        "price": 19.99,
+        "price": 14200,
         "description": "Natural minerals supplement.",
         "image": "/images/nature-min.jpg",
         "category": "Supplements"
@@ -278,7 +278,7 @@ products = [
     {
         "id": 33,
         "name": "Therm",
-        "price": 29.99,
+        "price": 22500,
         "description": "Thermogenic supplement.",
         "image": "/images/therm.png",
         "category": "Supplements"
@@ -286,7 +286,7 @@ products = [
     {
         "id": 34,
         "name": "Vitolize Women",
-        "price": 39.99,
+        "price": 25003,
         "description": "Women's vitality supplement.",
         "image": "/images/vitolize-women.jpg",
         "category": "Supplements"
@@ -294,11 +294,19 @@ products = [
     {
         "id": 35,
         "name": "Vitolize",
-        "price": 39.99,
+        "price": 24500,
         "description": "Vitality supplement.",
         "image": "/images/vitolize.jpg",
         "category": "Supplements"
-    }
+    },
+    # {
+    #     "id": 36,
+    #     "name": "Avocado",
+    #     "price": 5300,
+    #     "description": "Aloe and avocado combine for a luxurious,\n nutrient-rich soap that will leave your skin feeling smooth and moisturized.\n Aloe Avocado Face & Body soap is gentle enough for your entire body and\n face with a scent of freshly-picked citrus.",
+    #     "image": "/images/avocado.jpg",
+    #     "category": "Supplements"
+    # }
 ]
 
 # --- Basket (in-memory, per server run) ---

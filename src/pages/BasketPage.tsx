@@ -13,7 +13,6 @@ export default function BasketPage() {
   useEffect(() => { load(); }, []);
 
   const total = items.reduce((sum, i) => sum + i.price * i.quantity, 0);
-  const totalFCFA = Math.round(total * 655.957);
 
   const handleRemove = async (id: number) => {
     await removeFromBasket(id);
@@ -29,7 +28,7 @@ export default function BasketPage() {
     // Build the WhatsApp message
     const lines = items.map(
       item =>
-        `• ${item.name} x${item.quantity} — $${(item.price * item.quantity).toFixed(2)} (${Math.round(item.price * item.quantity * 655.957).toLocaleString()} FCFA)`
+        `• ${item.name} x${item.quantity} — ${(item.price * item.quantity).toLocaleString()} FCFA`
     );
 
     const message = [
@@ -37,8 +36,7 @@ export default function BasketPage() {
       "",
       ...lines,
       "",
-      `💵 *Total: $${total.toFixed(2)}*`,
-      `💰 *Total: ${totalFCFA.toLocaleString()} FCFA*`,
+      `💰 *Total: ${total.toLocaleString()} FCFA*`,
       "",
       "Please confirm this order. Thank you! 🙏",
     ].join("\n");
@@ -68,7 +66,6 @@ export default function BasketPage() {
       <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 24 }}>
         {items.map(item => {
           const itemTotal = item.price * item.quantity;
-          const itemFCFA = Math.round(itemTotal * 655.957);
           return (
             <div key={item.id} style={{
               display: "flex", alignItems: "center", gap: 16,
@@ -89,10 +86,7 @@ export default function BasketPage() {
                   Qty: {item.quantity}
                 </p>
                 <p style={{ fontSize: 13, color: "#059669", margin: 0, fontWeight: 500 }}>
-                  ${itemTotal.toFixed(2)}{" "}
-                  <span style={{ color: "#9ca3af", fontWeight: 400 }}>
-                    ({itemFCFA.toLocaleString()} FCFA)
-                  </span>
+                  {itemTotal.toLocaleString()} FCFA
                 </p>
               </div>
               <button
@@ -123,7 +117,7 @@ export default function BasketPage() {
         <div style={{ padding: "16px 20px", display: "flex", flexDirection: "column", gap: 10 }}>
           <div style={{ display: "flex", justifyContent: "space-between", fontSize: 14, color: "#6b7280" }}>
             <span>Items ({items.reduce((s, i) => s + i.quantity, 0)})</span>
-            <span>${total.toFixed(2)}</span>
+            <span>{total.toLocaleString()} FCFA</span>
           </div>
           <div style={{ display: "flex", justifyContent: "space-between", fontSize: 14, color: "#6b7280" }}>
             <span>Delivery</span>
@@ -135,13 +129,7 @@ export default function BasketPage() {
           }}>
             <div style={{ display: "flex", justifyContent: "space-between", fontWeight: 700, fontSize: 17, color: "#1f2937" }}>
               <span>Total</span>
-              <span style={{ color: "#059669" }}>${total.toFixed(2)}</span>
-            </div>
-            <div style={{ display: "flex", justifyContent: "space-between", fontSize: 13, color: "#6b7280" }}>
-              <span>Approx. in FCFA</span>
-              <span style={{ fontWeight: 600, color: "#047857" }}>
-                {totalFCFA.toLocaleString()} FCFA
-              </span>
+              <span style={{ color: "#059669" }}>{total.toLocaleString()} FCFA</span>
             </div>
           </div>
         </div>

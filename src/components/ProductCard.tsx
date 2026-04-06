@@ -73,7 +73,7 @@ export default function ProductCard({ product, onAdded, onImageClick }: Props) {
         </p>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 8 }}>
           <span style={{ fontSize: 16, fontWeight: 700, color: "#059669" }}>
-            ${product.price.toFixed(2)}
+            {product.price.toFixed(1)}FCFA
           </span>
           <button onClick={handleAdd} style={{
             background: "#059669", color: "#fff", border: "none", borderRadius: 8,
