@@ -1,7 +1,7 @@
 import axios from "axios";
 import type { Product, BasketItem } from "./types";
 
-const BASE = "https://your-backend-render-url.onrender.com";
+const BASE = "https://your-backend-render-url.onrender.com"; // Replace with your actual backend Render URL
 
 function resolveImage(imagePath: string): string {
   if (imagePath.startsWith("http")) return imagePath;
