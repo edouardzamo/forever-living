@@ -1,73 +1,53 @@
-# React + TypeScript + Vite
+# Forever Living
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is organized as a fullstack app with two main folders:
 
-Currently, two official plugins are available:
+- `frontend/` — React + Vite application
+- `Backend/` — FastAPI backend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Frontend
 
-## React Compiler
+The React app lives in `frontend/`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Install and run it from that folder:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd frontend
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Build for production:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd frontend
+npm run build
 ```
+
+## Backend
+
+The Python backend lives in `Backend/`.
+
+Install dependencies and run it from that folder:
+
+```bash
+cd Backend
+pip install -r requirements.txt
+python main.py
+```
+
+## Git
+
+This repository is already initialized as a Git repo. Keep your changes in the repository root and commit from there.
+
+```bash
+git status
+git add .
+git commit -m "Move frontend into frontend/ folder"
+git push
+```
+
+## Notes
+
+- The root `.gitignore` already covers `node_modules`, `dist`, and editor files.
+- Keep `Backend/` and `frontend/` separate so backend and frontend dependencies do not conflict.

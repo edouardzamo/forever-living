@@ -15,7 +15,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.mount("/images", StaticFiles(directory=os.path.join(os.path.dirname(__file__), "../public/images")), name="images")
+app.mount("/images", StaticFiles(directory=os.path.join(os.path.dirname(__file__), "../frontend/public/images")), name="images")
 
 # --- Product data ---
 products = [
